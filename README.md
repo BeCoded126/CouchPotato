@@ -1,20 +1,10 @@
-# Couch Potato (CoPo)
-- Shaelyn Blas
-- Lovnyth Valcin
-- Brandon-Ray Brown
+                                                        **CouchPotato(CoPo)**
 
-Description:
+CouchPotato(CoPo) is an application that allows for show streamers to connect with others for conversation as they watch the same episode of a show.
+The goal was to bring back the social experience that came with watch parties and social media conversations as our shows aired on live TV.
 
-Problem: Viewers not being able to experience the social aspect of binging an old show in real-time.
-
-Solution: An application that matches 2 or more users based off the show season & episode into a chatroom only activated when users are simultaneously viewing the same episode of a show.
-
-
-Future Updates:
-
-App iNtegrated with faceboook for reward system when sharing.
-
-avoid target database error:
-Dev A modifies models.py → generate migration → push PR → get merged
-
-Dev B modifies models.py → wait for Dev A → pull latest → generate migration → push PR
+                                                          **How it Works**
+                                                          
+Once a user is logged into their streaming site (Netflix, Hulu, etc), they will connect with our app and select the show, season & episode that they are currently watching. 
+Once this has been selected the unique ID provided form the API key will send that user in the matching chat room for that specific show. 
+Users who are watching the same episode will be entered into the same chat room since as the APIs will verify and match accordingly.
